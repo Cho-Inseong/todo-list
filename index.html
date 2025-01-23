@@ -16,23 +16,22 @@
             <div class="col">
                 <h1>ToDo!</h1>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="메모 작성하기" aria-label="Recipient's username"
-                        aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">추가</button>
+                    <input type="text" class="form-control" id="textbox" placeholder="메모 작성하기" aria-label="Recipient's username"aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2 plusbtn" onclick="addToDo()">추가</button>
                 </div>
 
-                <button type="button" class="btn btn-primary">전체</button>
-                <button type="button" class="btn btn-danger">미완료</button>
-                <button type="button" class="btn btn-success">완료</button>
+                <button type="button" class="btn btn-primary" onclick="showAll()">전체</button>
+                <button type="button" class="btn btn-danger" onclick="showIncomplete()">미완료</button>
+                <button type="button" class="btn btn-success" onclick="showComplete()">완료</button>
                 <hr>
-                <div class="todoarea">
-                    <!-- <input class="area_checkbox" type="checkbox" value="">
-                    <p>밥 먹기</p> -->
+                <div id="todoarea">
+                    
                 </div>
             </div>
             <div class="col"></div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
